@@ -136,7 +136,7 @@ cplay_6 : "youm neemd to be the **omwner** of the chamnnel[{0}] to connemct it w
 
 
 #Play
-play_1 : "🔄 Promcessing Quemry... Pleamse Waimt!"
+play_1 : "🔎"
 play_2 : "**🏷Chamnnel Plamy Modem**\n\n🔄 Promcessing Quemry... Pleamse Waimt!\n**Linked chamnnel:** {0}"
 play_3 : "Faimled to promcess quemry!" 
 play_4 : "🖇 **Amdmins only plamy**\nOnly admins and auth usemrs can plamy musimc in thims groump.\n\nChange momde via /playmode and if youm're alreamdy admin, reloamd admincamche via /admincache" 
