@@ -1,11 +1,3 @@
-#
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
-#
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
-#
-# All rights reserved.
 
 import asyncio
 import os
@@ -92,7 +84,7 @@ async def gen_thumb(videoid):
             image2 = image1.convert("RGBA")
             background = image2.filter(filter=ImageFilter.BoxBlur(30))
             enhancer = ImageEnhance.Brightness(background)
-            background = enhancer.enhance(0.5)
+            background = enhancer.enhance(0.6)
             image2 = background
 
             circle = Image.open("assets/circle.png")
@@ -105,7 +97,7 @@ async def gen_thumb(videoid):
             data = np.array(im)
             red, green, blue, alpha = data.T
 
-            white_areas = (white == 255) & (blue == 255) & (pink == 255)
+            white_areas = (red == 255) & (blue == 255) & (green == 255)
             data[..., :-1][white_areas.T] = color
 
             im2 = Image.fromarray(data)
@@ -132,10 +124,10 @@ async def gen_thumb(videoid):
             font4 = ImageFont.truetype("assets/font2.ttf", 35)
 
             image4 = ImageDraw.Draw(image2)
-            image4.text((10, 10), "Groovy Music", fill="white", font=font1, align="left")
+            image4.text((10, 10), "Alexa Music", fill="white", font=font1, align="left")
             image4.text(
                 (670, 150),
-                "NOW PLAYING",
+                "Now Playing",
                 fill="white",
                 font=font2,
                 stroke_width=2,
@@ -167,7 +159,7 @@ async def gen_thumb(videoid):
             # description
             views = f"Views : {views}"
             duration = f"Duration : {duration} Mins"
-            channel = f"Channel : Bade Log"
+            channel = f"Channel : Jankari Ki Duniya"
 
             image4.text((670, 450), text=views, fill="white", font=font4, align="left")
             image4.text(
@@ -230,7 +222,7 @@ async def gen_qthumb(videoid):
             image2 = image1.convert("RGBA")
             background = image2.filter(filter=ImageFilter.BoxBlur(30))
             enhancer = ImageEnhance.Brightness(background)
-            background = enhancer.enhance(0.5)
+            background = enhancer.enhance(0.6)
             image2 = background
 
             circle = Image.open("assets/circle.png")
@@ -243,7 +235,7 @@ async def gen_qthumb(videoid):
             data = np.array(im)
             red, green, blue, alpha = data.T
 
-            white_areas = (white == 255) & (blue == 255) & (pink == 255)
+            white_areas = (red == 255) & (blue == 255) & (green == 255)
             data[..., :-1][white_areas.T] = color
 
             im2 = Image.fromarray(data)
@@ -270,7 +262,7 @@ async def gen_qthumb(videoid):
             font4 = ImageFont.truetype("assets/font2.ttf", 35)
 
             image4 = ImageDraw.Draw(image2)
-            image4.text((10, 10), "Groovy Music", fill="white", font=font1, align="left")
+            image4.text((10, 10), "Alexa Music", fill="white", font=font1, align="left")
             image4.text(
                 (670, 150),
                 "Added To Queue",
@@ -305,7 +297,7 @@ async def gen_qthumb(videoid):
             # description
             views = f"Views : {views}"
             duration = f"Duration : {duration} Mins"
-            channel = f"Channel : Bade Log"
+            channel = f"Channel : Jankari Ki Duniya"
 
             image4.text((670, 450), text=views, fill="white", font=font4, align="left")
             image4.text(
@@ -322,4 +314,4 @@ async def gen_qthumb(videoid):
             return file
     except Exception as e:
         print(e)
-        return YOUTUBE_IMG_URL
+        return YOUTUBE_IMG_URL 
