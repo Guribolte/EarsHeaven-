@@ -1,12 +1,3 @@
-#
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
-#
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
-#
-# All rights reserved.
-
 import asyncio
 import os
 import re
@@ -17,9 +8,9 @@ import yt_dlp
 from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
 
-import config
-from YukkiMusic.utils.database import is_on_off
-from YukkiMusic.utils.formatters import time_to_seconds
+from Bikash import config
+from Bikash.utils.database import is_on_off
+from Bikash.utils.formatters import time_to_seconds
 
 
 async def shell_cmd(cmd):
@@ -344,7 +335,7 @@ class YouTubeAPI:
                     {
                         "key": "FFmpegExtractAudio",
                         "preferredcodec": "mp3",
-                        "preferredquality": "256",
+                        "preferredquality": "192",
                     }
                 ],
             }
