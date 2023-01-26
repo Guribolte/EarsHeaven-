@@ -10,7 +10,7 @@ from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageFo
 from youtubesearchpython.__future__ import VideosSearch
 
 from config import YOUTUBE_IMG_URL
-from AnonX import app
+from YukkiMusic import app
 
 
 def changeImageSize(maxWidth, maxHeight, image):
