@@ -94,10 +94,10 @@ AUTO_SUGGESTION_MODE = getenv("AUTO_SUGGESTION_MODE", None)
 PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", None)
 
 # Time sleep duration For Youtube Downloader
-YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(getenv("YOUTUBE_EDIT_SLEEP", "2"))
+YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(getenv("YOUTUBE_EDIT_SLEEP", "4"))
 
 # Time sleep duration For Telegram Downloader
-TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "2"))
+TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
 # Your Github Repo.. Will be shown on /start Command
 GITHUB_REPO = getenv("GITHUB_REPO", None)
@@ -180,7 +180,7 @@ PLAYLIST_IMG_URL = "https://telegra.ph//file/72a29f2ce95b8c5eb742e.jpg"
 
 GLOBAL_IMG_URL = "https://te.legra.ph/file/e906c2def5afe8a9b9120.jpg"
 
-STATS_IMG_URL = "https://telegra.ph//file/139822d66de2e2c6d2f99.jpg"
+STATS_IMG_URL = "https://telegra.ph//file/6833504ff53ac4286d1dc.jpg"
 
 TELEGRAM_AUDIO_URL = "https://telegra.ph//file/a8809fe07b09a571c809c.jpg"
 
